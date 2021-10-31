@@ -1,0 +1,16 @@
+using System;
+
+public enum PictureCategory {
+	FASHION,
+	FILM,
+	FOOD_DRINK,
+	PEOPLE,
+	NATURE,
+	ARCHITECTURE,
+	ABSTRACT,
+	SPACE,
+	STREET,
+	VEHICLE,
+	ELECTRONICS,
+
+}

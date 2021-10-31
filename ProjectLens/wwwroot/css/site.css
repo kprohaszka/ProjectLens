@@ -1,0 +1,210 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+h1 {
+    justify-content: center;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: whitesmoke;
+    background-size: cover;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    white-space: nowrap;
+    line-height: 60px;
+    background-color: black;
+    opacity: 90%;
+}
+
+.footer-container {
+    text-align: center;
+    min-height: 100%;
+    position: relative;
+}
+
+.search-container {
+    text-align: center;
+    min-height: 100%;
+    position: relative;
+    width: 600px;
+    margin-top: 20%;
+    margin-left: 23%;
+    /*    background-color:whitesmoke;
+    opacity:70%;*/
+}
+
+.search-bar {
+    border-radius: 5px;
+    width: 430px;
+    margin: auto;
+    border: 3px solid gray;
+}
+
+#btn {
+    margin: auto;
+    width: 200px;
+    background-color: white;
+    border: 3px solid gray;
+    padding: 10px;
+    font-family: 'Segoe UI';
+}
+
+
+input[type="password"] {
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    color: black;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.form-container {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-color: red;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px; /* apply negative top and left margins to truly center the element */
+}
+
+
+
+
+/* Image container CSS styling*/
+
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+image-container > a, image-container::after {
+    --ratio: calc(var(--w) / var(--h));
+    --row-height: 9rem;
+    flex-basis: calc(var(--ratio) * var(--row-height));
+}
+
+.image-container > a {
+    margin: 0.25rem;
+    flex-grow: calc(var(--ratio) * 100);
+}
+
+.image-container::after {
+    --w: 2;
+    --h: 1;
+    content: '';
+    flex-grow: 1000000;
+}
+
+.image-container > a > img {
+    display: block;
+    width: 100%;
+}
+
+
+
+.images-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+}
+
+.image {
+    box-shadow: 0 4px 5px 4px rgba(0, 0, 0, 0.3) cursor: pointer;
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    height: 100%;
+    max-height: 300px;
+}
+
+.image-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 15rem;
+    transition: var(--mainTransition);
+    object-fit: cover;
+    object-position: center center;
+}
+
+.logo-container {
+    width: 100%;
+    justify-content: center;
+}
